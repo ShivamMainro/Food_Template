@@ -1,0 +1,50 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.barright {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  margin-bottom: 2.86rem;
+  /* bottom: 0.5rem; */
+}
+
+.barright .image_right img {
+  position: relative;
+  left: 4rem;
+  /* align-items: end; */
+  text-align: end;
+  height: 6.9rem;
+  /* bottom: 1rem; */
+}
+
+.head_right {
+  position: relative;
+  left: 2rem;
+  /* bottom: 3rem; */
+  padding-right: 1rem;
+}
+
+.desc_right {
+  text-align: right;
+  text-decoration: none;
+  font-style: italic;
+  font-size: 1.4rem;
+  /* margin-top: 1rem; */
+  font-family: "Roboto";
+  color: #003a3a;
+  font-weight: 700;
+  margin-top: 0.8rem;
+}
+.title_right {
+  text-align: left;
+  margin-left: -1rem;
+  font-family: 'BioRhyme';
+  font-size: 1.8rem;
+  /* margin-top: 3rem; */
+}

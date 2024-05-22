@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.card img{
+    height: 17rem;
+    width: 28rem;
+    object-fit: cover;
+    object-position: center;
+}
+
+.title{
+    font-family: 'BioRhyme';
+    font-size: 1.8rem;
+    margin-top: 3rem;
+    width: 90%;
+    line-height: 1.2;
+    margin-bottom: 1rem;
+}
+
+.body{
+    width: 30rem;
+    font-family: 'Roboto';
+    font-size: 1.4rem;
+}
+
+.desc{
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    font-family: 'Roboto';
+    text-decoration: none;
+    font-style: italic;
+    color: #003a3a;
+    font-weight: 700;
+}
+
+@media(max-width: 500px){
+
+    .card{
+        width: 100vw;
+        /* border: 2px solid; */
+        /* margin-inline: auto; */
+        text-align: center;
+        padding: 2rem;
+    }
+    .card img{
+        width: 200px;
+        /* margin-left: 20%; */
+    }
+
+    .title{
+        /* text-align: center; */
+        margin-left: 1rem;
+        font-size: 2rem;
+        margin-top: 1rem;
+    }
+    .body{
+        
+        margin-left: 3rem;
+        width: 70%;
+        font-size: 1rem;
+    }
+}

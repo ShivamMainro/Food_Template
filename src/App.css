@@ -1,0 +1,1062 @@
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme+Expanded:wght@200;300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme:wght@200;300;400;700;800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200;300;400;700;800&display=swap");
+
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* page 1 */
+
+.page-1 {
+  height: 100vh;
+  width: 100vw;
+  background-image: url(public/img/pg1-bg.png);
+  background-size: 100% 100%;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-rows: 1fr 1fr 2fr;
+  color: #003a3a;
+  position: relative;
+}
+
+/* nav {
+  height: 9rem;
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 4rem;
+  grid-row: 1/2;
+  font-family: "Roboto";
+}
+
+nav .nav-items {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.2rem;
+  margin-right: 7rem;
+  text-transform: uppercase;
+}
+
+nav img {
+  margin: 1rem;
+  height: 7rem;
+}
+
+.nav-items h3 {
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.nav-items h3:hover {
+  text-decoration: underline;
+}
+
+.hide {
+  display: flex;
+  gap: 1.2rem;
+  align-items: center;
+}
+
+.nav-items h3 img {
+  display: none;
+} */
+
+/* src/App.css */
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem;
+  /* background-color: rgba(255, 255, 255, 0.9);  */
+  position: absolute;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+.logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #333; /* Adjust color to match your design */
+}
+
+.logo .logo-img{
+  padding-left: 40rem;
+  height: 6rem;
+  /* width: 6rem; */
+}
+
+.hamburger {
+  display: none;
+  cursor: pointer;
+  font-size: 1.5rem;
+  color: #333; /* Adjust color to match your design */
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+}
+
+ul{
+  padding-right: 6rem;
+}
+
+.nav-links li {
+  margin: 0 1rem;
+}
+
+.nav-links a {
+  color: #333; /* Adjust color to match your design */
+  text-decoration: none;
+  font-size: 1rem;
+  font-family: 'Roboto';
+  font-weight: 600;
+  font-size: 1.1rem;
+  cursor: pointer;
+}
+
+.nav-links a:hover{
+  text-decoration: underline;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .hamburger {
+      display: block;
+  }
+
+  .logo .logo-img{
+    padding-left: 12rem;
+    margin-top: 1rem;
+    height: 5rem;
+  }
+
+  .nav-links {
+      display: none;
+      flex-direction: column;
+      position: absolute;
+      top: 60%;
+      left: 0;
+      width: 100%;
+      background-color: rgb(255, 255, 255);
+      text-align: center;
+      padding: 1rem 0;
+  }
+
+  .nav-links.open {
+      display: flex;
+  }
+
+  .nav-links li {
+      margin: 1rem 0;
+  }
+}
+
+
+.pg1-lv1 {
+  grid-row: 2/3;
+  font-family: "BioRhyme Expanded";
+}
+
+.page-1 .pg1-lv1 h2:first-child {
+  color: aliceblue;
+}
+
+.pg1-lv1 h2 {
+  text-transform: uppercase;
+  font-weight: 900;
+  font-size: 3.3rem;
+  margin-left: 40%;
+  transform: translateY(-17%);
+  line-height: 1.2;
+}
+.pg1-lv2 {
+  grid-row: 3/4;
+  font-family: "BioRhyme";
+}
+
+.pg1-lv2 h3 {
+  width: 15rem;
+  margin-left: 61%;
+  font-size: 1.75rem;
+}
+
+.pg1-lv2 button {
+  margin-left: 62%;
+  margin-top: 2rem;
+  padding: 1em 1.8em;
+  background-color: #003a3a;
+  color: #fff;
+  border: none;
+  font-size: 1.2rem;
+}
+
+/* page 2 */
+
+.page-2 {
+  height: 100vh;
+  width: 100vw;
+  background-color: #003a3a;
+  position: relative;
+  overflow: hidden;
+  display: flex;
+}
+
+.page-2 .pg2-design {
+  position: absolute;
+  z-index: 0;
+}
+
+.page-2 .d-t {
+  width: 100%;
+  margin-top: -20%;
+}
+.page-2 .d-b {
+  width: 100%;
+  margin-top: -14rem;
+}
+
+.page-2 .pg2-img {
+  position: relative;
+  z-index: 1;
+  margin-top: 6rem;
+  margin-left: 3rem;
+}
+
+.page-2 .pg2-img h2 {
+  font-family: "BioRhyme Expanded";
+  position: relative;
+  z-index: 3;
+}
+
+.page-2 .pg2-img .pg2-head {
+  position: absolute;
+  margin-left: 85%;
+  font-size: 1.2rem;
+}
+
+.page-2 .pg2-img .pg2-head h2:first-child {
+  color: white;
+  margin-top: 3rem;
+}
+.page-2 .pg2-img .pg2-head h2:nth-child(2) {
+  color: pink;
+}
+
+.page-2 .pg2-behind {
+  width: 45vw;
+  height: 25rem;
+}
+
+.page-2 .pg2-front {
+  width: 37vw;
+  position: relative;
+  z-index: 2;
+  height: 21rem;
+  transform: translate(35%, -55%);
+  height: 24rem;
+}
+.pg2-txt {
+  font-family: "Roboto";
+  font-size: 1.5rem;
+  color: white;
+}
+
+.pg2-txt .interact-2 {
+  margin-top: 34%;
+  width: 35%;
+  margin-inline: auto;
+}
+
+.interact-2 button {
+  padding: 0.8em 1.8em;
+  border: 2px solid pink;
+  background-color: transparent;
+  font-size: 1.2rem;
+  margin-top: 15%;
+  margin-inline: auto;
+  color: #fff;
+}
+
+/* page-3 */
+
+.page-3 {
+  height: 100vh;
+  width: 100vw;
+  background-color: pink;
+}
+.page-3 .pg3-head h2 {
+  text-align: center;
+  font-family: "BioRhyme Expanded";
+  font-size: 2.69rem;
+}
+
+.page-3 .pg3-head h2 span:first-child {
+  color: white;
+}
+
+.page-3 .pg3-head h3 {
+  text-align: center;
+  font-size: 2rem;
+  font-family: "Roboto";
+  font-weight: 400;
+}
+
+.page-3 .cards {
+  margin-top: 4rem;
+  display: flex;
+  justify-content: center;
+}
+
+/* page-4 */
+
+.pg4-up {
+  background-image: url(public/img/pg4-bg.png);
+  height: 33.3rem;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+.pg4-up h2 {
+  font-family: "BioRhyme Expanded";
+  font-weight: 700;
+  text-align: center;
+  font-size: 2.6rem;
+  padding-top: 5rem;
+}
+.pg4-up p {
+  width: 65rem;
+  font-family: "Roboto";
+  font-weight: 400;
+  font-size: 2rem;
+  text-align: center;
+  margin-inline: auto;
+}
+.pg4-down {
+  position: relative;
+  background-color: #003a3a;
+}
+
+.pg4-down .d-top {
+  width: 100%;
+  margin-top: 20%;
+}
+.pg4-down .d-btm {
+  position: absolute;
+  width: 100%;
+  left: 0;
+  top: 40rem;
+}
+
+.page-4 .menu {
+  position: absolute;
+  top: -10%;
+  left: 7%;
+  background-color: pink;
+  width: 85%;
+  margin-inline: auto;
+  color: #003a3a;
+  height: 150vh;
+}
+
+.page-4 .menu h2 {
+  text-align: center;
+  font-family: "BioRhyme Expanded";
+  font-size: 2.6rem;
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+}
+
+.page-4 .menu .menu-contents {
+  display: flex;
+  gap: 1rem;
+}
+
+.page-4 .menu .menu-contents .menu-left {
+  border-right: 2px solid #003a3a;
+  padding-right: 2rem;
+  width: 59%;
+}
+
+.page-4 .menu .menu-contents .menu-right {
+  width: 59%;
+  margin-top: -1.4rem;
+}
+
+.page-4 .menu p {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #000000;
+  font-weight: 400;
+  font-family: "Roboto";
+  margin-top: 1rem;
+}
+.pg4-button {
+  text-align: center;
+}
+
+.page-4 .menu button {
+  background-color: #003a3a;
+  padding: 1em 0.8em;
+  margin-top: 2rem;
+  color: #fff;
+  font-size: 1.3rem;
+  border: none;
+}
+
+/* page-5 */
+
+.page-5 {
+  height: 100vh;
+  width: 100vw;
+}
+
+.pg5-head {
+  margin-block: 3rem;
+}
+.pg5-head h2 {
+  font-size: 2.6rem;
+  color: #f5c4c3;
+  font-family: "BioRhyme Expanded";
+  text-align: center;
+}
+
+.pg5-head p {
+  height: 3.5rem;
+  font-size: 2rem;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.pg5-cards {
+  display: flex;
+  align-self: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+
+/* page-6 */
+
+.page-6 {
+  background-color: #003a3a;
+}
+
+.pg6-head {
+  padding-top: 5rem;
+}
+
+.pg6-head h2 {
+  font-size: 2.6rem;
+  line-height: 4.6rem;
+  color: #ffffff;
+  font-weight: 400;
+  font-family: "BioRhyme Expanded";
+  text-align: center;
+}
+
+.pg6-head p {
+  font-size: 2rem;
+  line-height: 2.6rem;
+  color: #ffffff;
+  font-family: "Roboto";
+  text-align: center;
+}
+
+.pg6-content {
+  display: flex;
+  width: 100vw;
+  padding-bottom: 10rem;
+}
+
+.pg6-content .pg6-left {
+  width: 40%;
+}
+
+.pg6-left p {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: #ffffff;
+  font-family: "Roboto";
+  padding-top: 5rem;
+  padding-left: 5rem;
+}
+.pg6-right {
+  padding-top: 5rem;
+  padding-left: 5rem;
+  margin-left: 10rem;
+}
+
+.pg6-right label {
+  font-size: 17px;
+  color: #ffffff;
+  font-weight: 900;
+  font-family: "Roboto";
+}
+.pg6-pd {
+  display: flex;
+  margin-bottom: 2rem;
+}
+
+#people {
+  font-size: 1rem;
+  padding: 0.3em 0.5em;
+  height: 2rem;
+  width: 10rem;
+  border-radius: 0px;
+  border: none;
+}
+
+#date,
+#time {
+  font-size: 1rem;
+  height: 2rem;
+  padding: 0.3em 0.5em;
+  width: 10rem;
+  border-radius: 0px;
+  border: none;
+}
+
+.pg6-tb {
+  display: flex;
+  align-items: center;
+}
+.pg6-date {
+  padding-left: 5rem;
+}
+.pg6-b {
+  padding-left: 5rem;
+}
+
+.pg6-b .pg6-btn {
+  font-size: 1rem;
+  padding: 0.5em 0.5em;
+  width: 10rem;
+  border-radius: 0px;
+  border: none;
+  background-color: pink;
+  color: #003a3a;
+  margin-top: 1rem;
+}
+
+/* page-7 */
+
+.page-7 {
+  height: 100vh;
+  width: 100vw;
+  background-color: pink;
+  position: relative;
+}
+
+.pg7-dt {
+  width: 100vw;
+  position: absolute;
+  top: -11rem;
+}
+
+.pg7-db {
+  width: 100vw;
+  position: absolute;
+  top: 7.5rem;
+}
+
+.pg7-hero {
+  display: grid;
+  grid-template-columns: 1.2fr 1fr;
+}
+
+.pg7-left {
+  grid-column: 1/2;
+}
+
+.pg7-left .imz {
+  position: relative;
+  bottom: 11.5rem;
+  left: -10rem;
+}
+
+.pg7-right {
+  grid-column: 2/3;
+  grid-template-rows: 0.75fr 1fr;
+}
+
+.omelette {
+  position: relative;
+  top: -9rem;
+  margin-left: -20rem;
+}
+
+.pg7-rbtm h3 {
+  position: relative;
+  width: 31rem;
+  font-size: 3.5rem;
+  line-height: 3.3rem;
+  text-transform: uppercase;
+  color: #003a3a;
+  font-family: "BioRhyme Expanded";
+  text-align: right;
+  bottom: 18rem;
+  margin-left: -13rem;
+  margin-block: 2rem;
+}
+
+.pg7-rbtm p {
+  width: 25rem;
+  position: relative;
+  font-size: 1.8rem;
+  color: #555555;
+  font-family: "Roboto";
+  text-align: right;
+  bottom: 18rem;
+  margin-left: -7.5rem;
+}
+
+/* page8 */
+
+.page-8 {
+  background-color: #003a3a;
+}
+.pg8-head {
+  color: #ffffff;
+  font-family: "BioRhyme Expanded";
+  text-align: center;
+  padding-top: 2rem;
+}
+
+.pg8-cards {
+  display: flex;
+  padding: 2rem;
+  padding-left: 4rem;
+}
+
+/* footer */
+
+.footer {
+  background-color: #003a3a;
+  display: flex;
+  padding-left: 2rem;
+  color: #fff;
+  padding: 2rem;
+  border-top: 2px solid;
+}
+
+.fc1 h2 {
+  font-family: "BioRhyme Expanded";
+  margin-block: 1.5rem;
+  line-height: 1.1;
+}
+
+.fc1 h2 span {
+  color: pink;
+}
+
+.fc1 p {
+  font-family: "Roboto";
+  width: 65%;
+}
+
+.fc2 {
+  padding-top: 2rem;
+  padding-inline: 2rem;
+}
+
+.fc1 h2 {
+  font-family: "BioRhyme Expanded";
+  margin-block: 1.5rem;
+}
+
+.fc2 h2 {
+  font-family: "BioRhyme";
+  margin-bottom: 1.3rem;
+  color: pink;
+}
+
+.fc2 h3 {
+  font-family: "Roboto";
+  margin-bottom: 0.5rem;
+  cursor: pointer;
+}
+
+.fc2 h3:hover {
+  text-decoration: underline;
+}
+
+.fc3 {
+  padding-left: 17rem;
+  padding-top: 2rem;
+}
+
+.fc3 h2 {
+  font-family: "BioRhyme";
+  margin-bottom: 1.3rem;
+  color: pink;
+}
+
+.details {
+  margin-bottom: 2.3rem;
+}
+
+.fc3 h4 {
+  font-family: "Roboto";
+  font-weight: 400;
+  margin-bottom: 0.5rem;
+}
+
+@media (max-width: 500px) {
+  /* page-1 */
+
+  .master{
+    overflow: hidden;
+  }
+  .page-1 {
+    overflow: hidden;
+    background-size: 100% 55%;
+  }
+
+  nav {
+    margin-top: -4rem;
+    height: 15rem;
+  }
+
+  nav > img {
+    width: 8rem;
+    height: 5rem;
+    margin-left: 6rem;
+    padding-left: 3rem;
+  }
+
+  .nav-items .hide h3 {
+    display: none;
+  }
+
+  #nav-lines {
+    display: block;
+    height: 2rem;
+    margin-left: -1em;
+    margin-top: -0.6rem;
+  }
+
+  .pg1-lv1 {
+    width: 20rem;
+    margin-top: -2rem;
+  }
+
+  .pg1-lv1 h2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    margin-left: 6rem;
+    text-shadow: 2px 2px 2px #9d9797;
+  }
+
+  .pg1-lv2 h3 {
+    display: none;
+  }
+
+  .pg1-lv2 button {
+    position: relative;
+    top: -6rem;
+    padding: 0.6em 0.9em;
+    margin-left: 7.5rem;
+  }
+
+  /* page-2 */
+  .page-2 {
+    margin-top: -21.2rem;
+  }
+
+  .page-2 .pg2-img {
+    top: -5rem;
+    left: -2rem;
+  }
+  .page-2 .pg2-img img {
+    width: 70%;
+    height: 30%;
+    margin-top: 2rem;
+  }
+
+  .pg2-behind {
+    margin-left: 1.3rem;
+  }
+
+  .pg2-head h2 {
+    font-size: 1rem;
+    left: -9rem;
+    text-shadow: 2px 2px 2px #9d9797;
+    /* top: -2rem; */
+    /* margin-top: 2rem; */
+  }
+
+  .interact-2 p {
+    width: 80%;
+    font-size: 1.5rem;
+    position: absolute;
+    left: 2.5rem;
+    text-align: center;
+    top: 27rem;
+  }
+
+  .interact-2 button {
+    position: absolute;
+    left: 6rem;
+    top: 36rem;
+  }
+
+  /* page-3 */
+  .page-3 {
+    height: fit-content;
+    width: 100%;
+  }
+
+  .pg3-head h2 span {
+    font-size: 1.5rem;
+    font-weight: bolder;
+  }
+
+  .page-3 .pg3-head h3 {
+    font-size: 1.2rem;
+  }
+
+  .cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  /* page-4 */
+  .page-4 {
+    height: 150vh;
+  }
+
+  .pg4-up {
+    background-size: 100% 50%;
+  }
+
+  .pg4-up h2 {
+    font-size: large;
+    text-shadow: 2px 2px 2px #314458;
+
+    /* line-height: 4; */
+  }
+
+  .pg4-up p {
+    font-size: medium;
+    width: 15rem;
+    text-shadow: 2px 2px 2px #314458;
+  }
+
+  .page-4 .pg4-down .dessign {
+    display: none;
+  }
+
+  .page-4 .menu {
+    margin-top: -18rem;
+    width: 100%;
+    left: 0;
+    background-color: rgb(255, 192, 203);
+    height: fit-content;
+    padding-bottom: 2rem;
+  }
+
+  .page-4 .menu h2 {
+    font-size: 1.3rem;
+    font-weight: 900;
+    margin-top: -3rem;
+    margin-bottom: 2rem;
+  }
+
+  .page-4 .menu button {
+    margin-top: 1.5rem;
+    width: 50%;
+    height: 60px;
+  }
+  .page-4 .menu button:hover {
+    background-color: rgba(255, 105, 180, 0.733);
+    color: #000000;
+  }
+
+  .page-4 .menu p {
+    position: absolute;
+    bottom: 7rem;
+    font-size: large;
+  }
+  .book {
+    width: 150px;
+    height: 80px;
+  }
+
+  .menu-contents .menu-left {
+    font-size: 1rem;
+  }
+  .page-4 .menu .menu-contents .menu-left {
+    border: none;
+  }
+  .menu-right {
+    display: none;
+  }
+
+  /* page-5 */
+  .page-5 {
+    height: fit-content;
+  }
+  .page-5 .pg5-head h2 {
+    margin-top: -4rem;
+    font-size: 1rem;
+  }
+  .page-5 .pg5-head p {
+    font-size: 1.4rem;
+  }
+
+  .pg5-cards {
+    display: flex;
+    flex-direction: column;
+    gap: 6rem;
+  }
+
+  /* page-6 */
+
+  .page-6 {
+    /* display: none; */
+    height: fit-content;
+  }
+
+  .pg6-head h2 {
+    font-size: 1.5rem;
+    line-height: 1.5;
+  }
+  .pg6-head p {
+    display: none;
+  }
+  .page-6 .pg6-left {
+    display: none;
+  }
+
+  .pg6-right {
+    margin-left: -4rem;
+    /* width: 5%; */
+  }
+
+  .pg6-pd {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pg6-people {
+    margin-left: 5rem;
+    margin-block: 1rem;
+    padding-bottom: 1rem;
+  }
+
+  .pg6-tb {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .pg6-t {
+    margin-block: 1.3rem;
+    margin-top: -0.5rem;
+    margin-left: 5rem;
+  }
+
+  /* page-7 */
+  /* .page-7 img{
+    height: fit-content;
+  } */
+
+  .page-7{
+    height: fit-content;
+  }
+
+  .pg7-dt{
+    margin-top: 14rem;
+  }
+
+  .pg7-left img{
+    /* width: 10rem;
+    height: 10rem; */
+    display: none;
+  }
+
+  .omelette{
+    /* width: 10rem;
+    height: 10rem; */
+    display: none;
+  }
+
+  .page-7 .pg7-rbtm{
+    height: 15vh;
+  }
+
+  .pg7-rbtm h3{
+    margin-top: 20rem;
+    font-size: 1.5rem;
+    width: 100%;
+    text-align: center;
+    margin-left: -6.5rem;
+    line-height: 1.5;
+    font-weight: 800;
+    /* text-shadow: 1px 1px 1px #314458; */
+  }
+
+  .pg7-rbtm p{
+    font-size: 1.5rem;
+    /* margin-left: 0rem; */
+    text-align: center;
+    /* margin-left: -10rem; */
+    width: 14rem;
+    /* text-shadow: 1px 1px 1px #314458; */
+    font-weight: 600;
+    padding-right: 1.1rem;
+  }
+
+  /* page-8 */
+
+  .page-8 {
+    /* padding-top: 5rem; */
+    margin-top: -2rem;
+    text-align: center
+    
+  }
+
+  .pg8-head{
+    margin-block: 2rem;
+  }
+
+  .pg8-cards{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-right: 1.75rem;
+  }
+
+  /* last */
+
+  .footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .fc1{
+    text-align: center;
+  }
+
+  .fc1 p{
+    margin-left: 3rem;
+  }
+  .fc2{
+    text-align: center;
+  }
+  .footer .fc3 h2{
+    /* text-align: center; */
+    margin-left: -1.4rem;
+  }
+  .fc3 .details{
+    margin-right:17rem;
+  }
+}

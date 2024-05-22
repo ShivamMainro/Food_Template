@@ -1,0 +1,47 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.chef_panel{
+    margin-inline: 0.5rem;
+}
+
+.chef_panel img{
+    height: 25rem;
+    /* width: 20%; */
+    width: 25rem;
+    object-fit: cover;
+    object-position: center right;
+    margin-bottom: 2rem;
+    margin-top: -2rem;
+}
+
+.ctitle{
+    text-align: center;
+    font-size: 2rem;
+    font-family: "Roboto";
+}
+
+.cdesc{
+    text-align: center;
+    font-size: 1.3rem;
+    font-family: "Roboto";
+}
+
+@media(max-width: 500px){
+    .chef_panel{
+        /* display: flex;
+        flex-direction: column; */
+        align-items: center;
+    }
+    .chef_panel img{
+        width: 80%;
+        margin-left: 9%;
+        /* object-position: center left; */
+    }
+    .ctitle{
+        margin-top: -1rem;
+    }
+}
